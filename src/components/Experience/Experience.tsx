@@ -8,8 +8,8 @@ export default function Experience() {
     <section className={`container ${styles.sectionCustom}`}>
       <div className={styles.experienceContent}>
         <div className={styles.experienceTextWrapper}>
-          <h2 className={textStyles.textStylishFour}>My</h2>
-          <h2 className={textStyles.textStylishFour}>Experience</h2>
+          <h2 className={textStyles.textStylishExpOne}>My</h2>
+          <h2 className={textStyles.textStylishExpSecond}>Experience</h2>
         </div>
 
         <ul className={styles.experienceWrapper}>

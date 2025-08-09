@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/header.module.scss";
+import { Button } from "../ui/Button/Button";
 
 export default function Header() {
   return (
@@ -23,10 +24,24 @@ export default function Header() {
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
-        <button className={styles.resumeButton}>
+        {/* <button className={styles.resumeButton}>
           Resume
           <Image width={20} height={20} src={"/images/download.svg"} alt="logo" />
-        </button>
+        </button> */}
+        <Button
+          variant="solid"
+          size="md"
+          rightIcon={
+            <Image
+              width={20}
+              height={20}
+              src={"/images/download.svg"}
+              alt="logo"
+            />
+          }
+        >
+          Resume
+        </Button>
       </nav>
     </header>
   );

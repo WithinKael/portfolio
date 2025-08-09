@@ -1,3 +1,5 @@
+import facebookIcon from '@/assets/icons/facebook.svg'
+
 export const topSkills = [
   { icon: "/images/icons/icon-git.svg", name: "Git" },
   { icon: "/images/icons/icon-javscript.svg", name: "Javascript" },
@@ -32,5 +34,24 @@ export const experienceData = [
     title: "Junior Software Engineer at Apple",
     year: "Jan 2016 - Dec 2017",
     text: "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.",
+  },
+];
+
+export const dataButtons = [
+  {
+    icon: facebookIcon,
+    alt: "facebook",
+  },
+  {
+    icon: "reddit.svg",
+    alt: "reddit",
+  },
+  {
+    icon: "twitter.svg",
+    alt: "twitter",
+  },
+  {
+    icon: "discord.svg",
+    alt: "discord",
   },
 ];

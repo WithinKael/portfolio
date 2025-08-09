@@ -6,6 +6,14 @@
     align-items: center;
     flex-shrink: 0;
     position: relative;
+
+    .heroButtons {
+        display: flex;
+        gap: 32px;
+        position: absolute;
+        left: 32px;
+        bottom: -23px;
+    }
     
     .mainImage {
         top: 0;
@@ -18,6 +26,8 @@
             display: flex;
             gap: 32px;
             flex-direction: column;
+            align-items: start;
+            justify-content: center;
             align-self: stretch;
 
             .textSubduedWrapper {

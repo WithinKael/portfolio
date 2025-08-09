@@ -1,24 +1,37 @@
 import Image from "next/image";
 import styles from "../../styles/hero.module.scss";
 import textStyles from "../../styles/textStyles.module.scss";
+import { Button } from "../ui/Button/Button";
+import { dataButtons } from "@/listData/data";
+import FacebookIcon from "@/assets/icons/facebook"
 
 export default function Hero() {
   return (
     <section className="container">
       <div className={styles.heroContent}>
+        <div className={styles.heroButtons}>
+          {dataButtons.map((btn, idx) => (
+            <Button
+              key={idx}
+              variant="outline"
+              size={"md"}
+              leftIcon={<FacebookIcon />}
+            />
+          ))}
+        </div>
         <div className={styles.textContent}>
           <div className={styles.textWrapper}>
             <div className={styles.headingWrapper}>
-              <h2 className={textStyles.textStylishOne}>Hello I&apos;m</h2>
-              <h2 className={textStyles.textStylishTwo}>Yaroslav Li.</h2>
+              <h2 className={textStyles.textHeroFirst}>Hello I&apos;m</h2>
+              <h2 className={textStyles.textHeroSecond}>Yaroslav Li.</h2>
             </div>
             <div className={styles.headingWrapper}>
-              <h2 className={textStyles.textStylishTwo}>Frontend</h2>
-              <h2 className={textStyles.textStylishThree}>Developer</h2>
+              <h2 className={textStyles.textHeroSecond}>Frontend</h2>
+              <h2 className={textStyles.textHeroThird}>Developer</h2>
             </div>
             <div className={styles.headingWrapper}>
-              <h2 className={textStyles.textStylishOne}>Based In</h2>
-              <h2 className={textStyles.textStylishTwo}>Poland.</h2>
+              <h2 className={textStyles.textHeroFirst}>Based In</h2>
+              <h2 className={textStyles.textHeroSecond}>Poland.</h2>
             </div>
           </div>
           <div className={styles.textSubduedWrapper}>

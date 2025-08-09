@@ -1,0 +1,23 @@
+.aboutMeContent {
+    display: flex;
+    padding: 0 32px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    .aboutMeTextWrapper {
+        display: flex;
+        padding: 20px 0;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+} 
+
+.aboutMeTextContent {
+    display: flex;
+    height: 572px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
