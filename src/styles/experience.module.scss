@@ -1,0 +1,32 @@
+.sectionCustom {
+    background: var(--Primary-Black, #000); 
+    
+    .experienceContent {
+            display: flex;
+            padding: 0 32px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+    
+            .experienceTextWrapper {
+                display: flex;
+                padding: 20px 0;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                align-self: stretch;
+            }
+    
+            .experienceWrapper {
+                display: flex;
+                padding: 40px 24px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 32px;
+                align-self: stretch;
+            }
+        }
+}
+

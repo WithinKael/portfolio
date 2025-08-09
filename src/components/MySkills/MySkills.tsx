@@ -1,14 +1,15 @@
 import styles from "../../styles/mySkills.module.scss";
 import { topSkills, bottomSkills } from "@/listData/data";
 import SkillCard from "../SkillCard/SkillCard";
+import textStyles from '../../styles/textStyles.module.scss'
 
 export default function MySkills() {
   return (
     <section className="container">
       <div className={styles.skillsContainer}>
         <div className={styles.textContainer}>
-          <p>My</p>
-          <p>Skills</p>
+          <h2 className={textStyles.mySkillsTitle}>My</h2>
+          <h2 className={textStyles.mySkillsSecondTitle}>Skills</h2>
         </div>
         <div className={styles.listContainer}>
           <ul className={styles.list}>

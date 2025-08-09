@@ -1,6 +1,5 @@
 .header {
     padding: 24px 80px;
-    width: 1440px;
     background-color: #fff;
 }
 
@@ -44,6 +43,7 @@
 
     .resumeButton {
         display: flex;
+        cursor: pointer;
         justify-content: center;
         align-items: center;
         height: 56px;
@@ -57,6 +57,15 @@
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.4px;
+        &:hover {
+            background: var(--Primary-Neutral, #404040);
+        }
+        
+        &:focus {
+            border: 2px solid var(--Primary-Black, #000);
+            background: var(--Primary-White);
+            color: var(--Primary-Black);
+        }
     }   
 }
 

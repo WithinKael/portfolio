@@ -1,5 +1,22 @@
 @import "../styles/variables.module.scss";
 
+
+.mySkillsTitle {
+    color: var(--Primary-Black, #000);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
+.mySkillsSecondTitle{
+    color: var(--Primary-Black, #000);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
 .textSubdued {
     color: var(--Zinc-500, #71717A);
     font-size: 16px;
@@ -36,3 +53,38 @@
     line-height: 56px;
     letter-spacing: -0.96px;
 }
+
+.textStylishFour {
+    color: var(--Primary-White, #FFF);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
+.textExpCardTitle {
+    color: var(--Primary-White, #FFF);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.48px;
+}
+
+.yearTextExp {
+    color: var(--Zinc-300, #D4D4D8);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+}
+
+.subTextExp {
+    color: var(--Zinc-300, #D4D4D8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    
+}
+

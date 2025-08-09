@@ -9,7 +9,7 @@ type SkillCardProps = {
 export default function SkillCard({ icon, name }: SkillCardProps) {
   return (
     <li className={styles.listItem}>
-      <Image src={icon} alt={name} width={40} height={40} />
+      <Image src={icon} alt={name} width={56} height={56} />
       <p>{name}</p>
     </li>
   );

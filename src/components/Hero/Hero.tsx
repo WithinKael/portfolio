@@ -14,7 +14,7 @@ export default function Hero() {
             </div>
             <div className={styles.headingWrapper}>
               <h2 className={textStyles.textStylishTwo}>Frontend</h2>
-              <h2 className={textStyles.textStylishThree}>Devoloper</h2>
+              <h2 className={textStyles.textStylishThree}>Developer</h2>
             </div>
             <div className={styles.headingWrapper}>
               <h2 className={textStyles.textStylishOne}>Based In</h2>
