@@ -1,0 +1,38 @@
+@import "../styles/variables.module.scss";
+
+.textSubdued {
+    color: var(--Zinc-500, #71717A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.textStylishOne {
+    color: var(--Primary-Black, #000);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
+.textStylishTwo {
+    color: var(--Primary-Black, #000);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}
+
+.textStylishThree {   
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--Primary-Black, #000);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: -0.96px;
+}

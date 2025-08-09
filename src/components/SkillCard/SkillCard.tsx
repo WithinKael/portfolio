@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/SkillCard.module.scss";
+import styles from "../../styles/skillCard.module.scss";
 
 type SkillCardProps = {
   icon: string; // путь к SVG

@@ -1,4 +1,4 @@
-import styles from "../../styles/MySkills.module.scss";
+import styles from "../../styles/mySkills.module.scss";
 import { topSkills, bottomSkills } from "@/listData/data";
 import SkillCard from "../SkillCard/SkillCard";
 
