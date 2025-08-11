@@ -1,0 +1,39 @@
+.myProjectsCardContent {
+  display: flex;
+  padding: 20px 0;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+
+  .myProjectsCardImageWrapper {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+
+    .myProjectImage {
+      border-radius: 18.761px;
+      box-shadow: 0 8px 18px -6px rgba(24, 39, 75, 0.12),
+        0 12px 42px -4px rgba(24, 39, 75, 0.12);
+      object-fit: cover;
+      margin: 39.5px 0;
+    }
+  }
+
+  .myProjectsCardTextWrapper {
+    display: flex;
+    flex: 1;
+    gap: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+
+    .myProjectsCardImageWrapper {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.sectionMyProjectsCustom {
+  background: var(--Primary-Black, #000);
+
+  .myProjectsContent {
+    display: flex;
+    padding: 0 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    .myProjectsTitleWrapper {
+      display: flex;
+      padding: 20px 0;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+  }
+}

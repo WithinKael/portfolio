@@ -1,4 +1,5 @@
-import facebookIcon from '@/assets/icons/facebook.svg'
+import facebookIcon from "@/assets/icons/facebook.svg";
+import { reverse } from "dns";
 
 export const topSkills = [
   { icon: "/images/icons/icon-git.svg", name: "Git" },
@@ -53,5 +54,29 @@ export const dataButtons = [
   {
     icon: "discord.svg",
     alt: "discord",
+  },
+];
+
+export const myProjectsData = [
+  {
+    img: "/images/MyProjects-1.jpg",
+    id: "01",
+    title: "Crypto Screener Application",
+    text: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    icon: "/images/icons/readMore.svg",
+  },
+  {
+    img: "/images/MyProjects-2.jpg",
+    id: "02",
+    title: "Euphoria - Ecommerce (Apparels) Website Template",
+    text: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book when an unknown printer took a galley of type and scrambled it to specimen book",
+    icon: "/images/icons/readMore.svg",
+  },
+  {
+    img: "/images/MyProjects-3.jpg",
+    id: "03",
+    title: "Blog Website Template",
+    text: "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+    icon: "/images/icons/readMore.svg",
   },
 ];
