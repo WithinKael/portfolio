@@ -1,119 +1,90 @@
-
 :root {
-    --btn-bg: #ffffff;
-    --btn-bg-hover: #000000;
-    --btn-bg-active: transparent;
+  --btn-bg: #000000;
+  --btn-bg-hover: #404040;
+  --btn-bg-active: #fff;
 
-    --btn-fg: #000000;
-    --btn-fg-hover: #fff;
-    --btn-fg-active: #000;
+  --btn-fg: #f8f8f8;
+  --btn-fg-hover: #fff;
+  --btn-fg-active: #000;
 
-    --btn-border: #000;
-    --btn-radius: 4px;
+  --btn-border: #000;
+  --btn-radius: 4px;
 
-    --btn-sm-h: 32px;
-    --btn-sm-px: 12px;
-    --btn-md-h: 56px;
-    --btn-md-px: 16px;
+  --btn-sm-h: 32px;
+  --btn-sm-px: 12px;
+  --btn-md-h: 56px;
+  --btn-md-px: 16px;
 
-    --btn-gap: 8px;
-    --btn-icon-size: 20px;
-    --btn-shadow-active: inset 0 0 0 1px var(--btn-border);
+  --btn-gap: 8px;
+  --btn-icon-size: 20px;
+  --btn-shadow-active: inset 0 0 0 1px var(--btn-border);
 }
 
 .btn {
-    --_bg: var(--btn-bg);
-    --_fg: var(--btn-fg);
+  --_bg: var(--btn-bg);
+  --_fg: var(--btn-fg);
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--btn-gap);
-    border: 2px solid var(--btn-border, #000);
-    border-radius: var(--btn-radius);
-    background: var(--_bg);
-    color: var(--_fg);
-    font-weight: 600;
-    line-height: 1;
-    cursor: pointer;
-    transition: background-color .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--btn-gap);
+  border: 2px solid var(--btn-border, #000);
+  border-radius: var(--btn-radius);
+  background: var(--_bg);
+  color: var(--_fg);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  height: var(--btn-md-h);
+  padding: 0 var(--btn-md-px);
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease;
 
-    &:hover:not(:disabled) {
-        background: var(--btn-bg-hover);
-        color: var(--btn-fg-hover);
-    }
+  &:hover:not(:disabled) {
+    background: var(--btn-bg-hover);
+    color: var(--btn-fg-hover);
+  }
 
-    &:active:not(:disabled) {
-        background: var(--btn-bg-active);
-        color: var(--btn-fg-active);
-        border-color: var(--btn-border);
-        box-shadow: var(--btn-shadow-active);
-    }
-
-    &:disabled {
-        opacity: .6;
-        cursor: not-allowed;
-    }
-}
-
-/* размеры */
-.size_sm {
-    height: var(--btn-sm-h);
-    padding: 0 var(--btn-sm-px);
-    font-size: 12px;
-}
-
-.size_md {
-    height: var(--btn-md-h);
-    padding: 0 var(--btn-md-px);
-    font-size: 14px;
-}
-
-/* варианты */
-.variant_solid {
-    border-color: transparent;
-}
-
-.variant_outline {
-    --_bg: transparent;
-    --_fg: var(--btn-border);
+  &:active:not(:disabled) {
+    background: var(--btn-bg-active);
+    color: var(--btn-fg-active);
     border-color: var(--btn-border);
+    box-shadow: var(--btn-shadow-active);
+  }
 
-    &:hover:not(:disabled) {
-        background: var(--btn-bg-hover);
-        /* можно задать полупрозрачный фон */
-        color: var(--btn-fg-hover);
-    }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 }
 
 /* иконки и текст */
 .icon {
-    display: inline-flex;
-    width: var(--btn-icon-size);
-    height: var(--btn-icon-size);
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  width: var(--btn-icon-size);
+  height: var(--btn-icon-size);
+  align-items: center;
+  justify-content: center;
 }
 
 .left {
-    margin-right: 2px;
+  margin-right: 2px;
 }
 
 .right {
-    margin-left: 2px;
+  margin-left: 2px;
 }
 
 .text {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 /* квадратная кнопка только с иконкой */
 .iconOnly {
-    padding: 0;
-    width: var(--btn-md-h);
-    aspect-ratio: 1 / 1;
-
-    &.size_sm {
-        width: var(--btn-sm-h);
-    }
+  padding: 0;
+  width: var(--btn-md-h);
+  aspect-ratio: 1 / 1;
 }

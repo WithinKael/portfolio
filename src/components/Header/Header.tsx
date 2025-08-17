@@ -24,10 +24,6 @@ export default function Header() {
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
-        {/* <button className={styles.resumeButton}>
-          Resume
-          <Image width={20} height={20} src={"/images/download.svg"} alt="logo" />
-        </button> */}
         <Button
           variant="solid"
           size="md"

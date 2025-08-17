@@ -1,5 +1,4 @@
 import facebookIcon from "@/assets/icons/facebook.svg";
-import { reverse } from "dns";
 
 export const topSkills = [
   { icon: "/images/icons/icon-git.svg", name: "Git" },

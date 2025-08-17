@@ -1,0 +1,71 @@
+.contactFormContent {
+  display: flex;
+  padding: 0 32px;
+  justify-content: space-between;
+  align-items: center;
+
+  .contactInputWrapper {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+
+    .inputText {
+      display: flex;
+      width: 500px;
+      height: 56px;
+      padding: 16px 24px;
+      align-items: center;
+      border-radius: 4px;
+      border: 1.4px solid var(--Primary-Black, #000);
+    }
+
+    .textArea {
+      display: flex;
+      width: 500px;
+      height: 140px;
+      padding: 16px 24px;
+      align-items: flex-start;
+      border-radius: 4px;
+      border: 1.4px solid var(--Primary-Black, #000);
+    }
+
+    .contactFormButtons {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .contactTitleWrapper {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 50%;
+
+    .contactTitleContent {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      .contactTitleInner {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+
+        .contactTitleSubInner {
+          display: flex;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
